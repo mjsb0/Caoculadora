@@ -12,43 +12,45 @@ struct ContentView: View {
     @State var years: Int? = nil
     @State var months: Int? = nil
     @State var result: Int?
-    let portes = ["Pequeno", "Médio", "Grande"]
-    @State var porte: String = "Pequeno"
+    @State var porteSelecionado: Porte = .pequeno
     
     var body: some View {
         VStack(alignment: .leading) {
             
             Text("Qual a idade do seu cão?")
+                .font(.header5)
             Text("Anos")
+                .font(.body1)
             TextField("Digite quantos anos seu cão tem", value: $years, format: .number
             )
             Text("Meses")
+                .font(.body1)
             TextField("Digite quantos meses além disso ele tem", value: $months, format: .number)
             
             
             Text("Porte")
+                .font(.body1)
             
-            Picker("Porte", selection: $porte) {
-                ForEach(portes, id: \.self) { porte in
-                    Text(porte)
+            Picker("Porte", selection: $porteSelecionado) {
+                ForEach(Porte.allCases, id: \.self) { porte in
+                    Text(porte.rawValue)
                         .tag(porte)
                     
                 }
-                
     
             }
             .pickerStyle(.segmented)
             
             Divider()
                 .background(.purple)
-                
-            // aqui vai ficar o segmentes control
-            
+                            
             Spacer()
             
             if let result {
                 Text("Seu cachorro tem em idade humana...")
+                    .font(.body1)
                 Text("\(result) anos")
+                    .font(.display)
                     .foregroundStyle(.purple)
                     
                     
@@ -68,13 +70,13 @@ struct ContentView: View {
                     Color.purple
                     Text("Cãocular")
                         .foregroundStyle(.white)
+                        .font(.body1)
                 }
                 
             })
             
             .cornerRadius(12)
             .frame(height: 50)
-            
             
         }
         
@@ -99,11 +101,16 @@ struct ContentView: View {
             print("algum campo tem que ter valor maior que zero")
             return
         }
-            result = years * 7 + months*7/12
+        
+        
+        
+        result = porteSelecionado.conversaoDeIdade(
+            anos: years,
+            meses: months)
+        
         }
         
     }
-
 
 #Preview {
     ContentView()

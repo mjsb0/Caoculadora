@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6182C52BEE9D5900EAE5B0 /* porte.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6182C42BEE9D5900EAE5B0 /* porte.swift */; };
+		BC6182C72BEEAFE200EAE5B0 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6182C62BEEAFE200EAE5B0 /* StyleGuide.swift */; };
 		BCB144CA2BEAB1DC00E1E562 /* CaoculadoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB144C92BEAB1DC00E1E562 /* CaoculadoraApp.swift */; };
 		BCB144CC2BEAB1DC00E1E562 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB144CB2BEAB1DC00E1E562 /* ContentView.swift */; };
 		BCB144CE2BEAB1DC00E1E562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB144CD2BEAB1DC00E1E562 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC6182C42BEE9D5900EAE5B0 /* porte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = porte.swift; sourceTree = "<group>"; };
+		BC6182C62BEEAFE200EAE5B0 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		BCB144C62BEAB1DC00E1E562 /* Caoculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caoculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB144C92BEAB1DC00E1E562 /* CaoculadoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraApp.swift; sourceTree = "<group>"; };
 		BCB144CB2BEAB1DC00E1E562 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				BCB144C92BEAB1DC00E1E562 /* CaoculadoraApp.swift */,
 				BCB144CB2BEAB1DC00E1E562 /* ContentView.swift */,
+				BC6182C62BEEAFE200EAE5B0 /* StyleGuide.swift */,
+				BC6182C42BEE9D5900EAE5B0 /* porte.swift */,
 				BCB144CD2BEAB1DC00E1E562 /* Assets.xcassets */,
 				BCB144CF2BEAB1DC00E1E562 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				BCB144CC2BEAB1DC00E1E562 /* ContentView.swift in Sources */,
 				BCB144CA2BEAB1DC00E1E562 /* CaoculadoraApp.swift in Sources */,
+				BC6182C72BEEAFE200EAE5B0 /* StyleGuide.swift in Sources */,
+				BC6182C52BEE9D5900EAE5B0 /* porte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
